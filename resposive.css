@@ -1,0 +1,264 @@
+@font-face {
+    font-family:ubuntu-medium;
+    src: url("/assets/fonts/Ubuntu/Ubuntu-Medium.ttf.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:ubuntu-medium;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+
+}
+.logo{
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.logo img:hover{
+    width: 100px;
+    height: 100px;
+    transition: 2s;
+}
+.nav-list{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50%;
+/* background-color:black; */
+
+}
+.nav-list li{
+    list-style-type: none;
+    padding: 23px;
+}
+.nav-list li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:Ubuntu-Medium;
+}
+.nav-list li a:hover{
+
+color: rgba(32, 142, 175, 0.982);
+}
+.rightNav{
+    width: 30%;
+    /* background-color: blueviolet; */
+    text-align: right;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding:0 23px;
+}
+#search{
+padding: 5px;
+font-size: 17px;
+border-radius: 2px solid gray;
+border-radius: 9px;
+}
+.background{
+    background: rgba(0,0, 0,0.7) url('/assets/images/mobile-ass-hero.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+/*=============== BACKGROUND-SECTION ==============*/
+.firstSection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width:100%;
+    gap: 100px;
+    margin:0 250px;
+    height: 100%;
+}
+.secondHalf img{
+    width: 25vw;
+    height:50vh;
+    border: 4px solid rgb(8, 6, 6);
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.firstHalf{
+width:80%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-top: 25px;
+}
+
+.secondHalf{
+width: 30%;
+}
+
+.text-big{
+font-size:7vmin;
+font-family:ubuntu-medium;
+/* text-align: center; */
+}
+
+.text-small{
+font-size: 20px;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px; 
+    background: none;
+    color: white;
+    cursor: pointer;
+
+}
+/*==========SECTION-RIGHT ===========*/
+.section{
+    display: flex;
+    /* height: 500px; */
+    align-items: center;
+    justify-content: center;
+    max-width:80%;
+    margin: auto;
+    padding: 10px;
+}
+.left{
+flex-direction: row-reverse;
+}
+.paras{
+     padding: 0 65px;
+     font-family: ubuntu-medium;
+}
+.thumbnail img{
+    height:40vh;
+    width: 100%;
+    border: 3px solid black;
+    border-radius:20px ;
+    box-shadow:3px 5px 10px rgb(94, 86, 86);
+    margin-top: 19px;
+}
+.iframe iframe{
+    height:40vh;
+    width: 100%;
+    border: 3px solid black;
+    border-radius:20px ;
+    box-shadow:3px 5px 10px rgb(94, 86, 86);
+    margin-top: 19px;   
+}
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.sectionSubTag ul li{
+list-style: none;
+}
+/*============Section Contact Us ================== */
+.contact{
+    background-color:rgb(223, 206, 206);
+    height:700px;
+}
+.text-center{
+    font-size: 7vmin;
+    text-align: center;
+    padding: 30px;
+    font-family: ubuntu-medium;
+}
+.form{
+    max-width:62%;
+    margin:25px auto;
+}
+.form-input{
+    width: 100%;
+    font-size:19px ;
+    border: 2px solid grey;
+    background-color: rgb(201, 201, 226);
+    border-radius:6px;
+    margin:14px 0;
+    padding: 5px 3px;
+}
+.btn-dark{
+    color:black;
+    border:2px solid grey;
+    background-color: rgb(173, 173, 199);
+    font-size: 16px;
+}
+/*===========FOOTER-SECTION =============*/
+.text-footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+    font-family:ubuntu-medium; 
+    color: white;
+}
+
+.footerIcon{
+    height: 5vh;
+    width: 5vw;
+    border-radius: 50%;
+}
+.footerList{
+    display: flex;
+    justify-content:flex-end;
+    gap: 50px;
+    margin-right: 50px;
+}
+.burger{
+    display: none;
+     position: absolute;
+     cursor: pointer;
+     right: 5%;
+     top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+
+}
+.backToTop{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: ubuntu-medium;
+    
+}
+
+/*============SMARTPHONE ACCESSORIES========*/
+.img{
+    height:40vh;
+    width: 100%;
+    border: 3px solid black;
+    border-radius:20px ;
+    box-shadow:3px 5px 10px rgb(94, 86, 86);
+    margin-top: 19px;  
+}
